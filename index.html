@@ -2,17 +2,16 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>friend-o-gram</title>
+        <title>foodstagram</title>
         <style>
-            body {
-                display: grid;
-                grid-template-columns: auto auto auto;
-                background-color: lightpink;
-            }
             .photo {
                 height: 400px;
                 background-size: cover;
                 background-position: 50% 50%
+            }
+            #photo-wrapper {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
             }
             #photo-1 {
                 background-image: url('photo-1.jpg')
@@ -35,11 +34,14 @@
         </style>
     </head>
     <body>
-        <div class="photo" id="photo-1"></div>
-        <div class="photo" id="photo-2"></div>
-        <div class="photo" id="photo-3"></div>
-        <div class="photo" id="photo-4"></div>
-        <div class="photo" id="photo-5"></div>
-        <div class="photo" id="photo-6"></div>
+        <h1>foodstagram</h1>
+        <div id ="photo-wrapper">
+            <div class="photo" id="photo-1"></div>
+            <div class="photo" id="photo-2"></div>
+            <div class="photo" id="photo-3"></div>
+            <div class="photo" id="photo-4"></div>
+            <div class="photo" id="photo-5"></div>
+            <div class="photo" id="photo-6"></div>
+        </div>
     </body>
 </html>
